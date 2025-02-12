@@ -1,0 +1,4 @@
+ToolSet: 1.0 (local)Ninja: 1.12.1@/mnt/ea4c2427-5d25-4b10-8839-19c0d6586c22/Downloads/clion-2024.3.2/bin/ninja/linux/x64/ninja
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=/mnt/ea4c2427-5d25-4b10-8839-19c0d6586c22/Downloads/clion-2024.3.2/bin/ninja/linux/x64/ninja

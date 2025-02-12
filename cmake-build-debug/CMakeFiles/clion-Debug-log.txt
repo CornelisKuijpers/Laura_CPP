@@ -1,0 +1,4 @@
+/mnt/ea4c2427-5d25-4b10-8839-19c0d6586c22/Downloads/clion-2024.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/mnt/ea4c2427-5d25-4b10-8839-19c0d6586c22/Downloads/clion-2024.3.2/bin/ninja/linux/x64/ninja -G Ninja -S /home/hadez/CLionProjects/Laura -B /home/hadez/CLionProjects/Laura/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/hadez/CLionProjects/Laura/cmake-build-debug
