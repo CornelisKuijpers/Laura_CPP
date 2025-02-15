@@ -14,6 +14,8 @@ public:
     Matrix forward(const Matrix& input);
     Matrix backward(const Matrix& output_gradient);
     void setMomentum(double m) { momentum = m; }
+    void save(std::ofstream& file) const;
+    static std::unique_ptr<NeuralLayer> load(std::ifstream& file);
 private:
     Matrix weights;
     Matrix bias;
@@ -23,8 +25,7 @@ private:
     double momentum = 0.9;
     Matrix prev_weight_update;
     Matrix prev_bias_update;
-    void save(std::ofstream& file) const;
-    static std::unique_ptr<NeuralLayer> load(std::ifstream& file);
+
 };
 
 #endif //NEURALLAYER_H

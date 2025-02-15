@@ -73,6 +73,12 @@ build CMakeFiles/Laura.dir/headers/neural_utils.cpp.o: CXX_COMPILER__Laura_unsca
   OBJECT_DIR = CMakeFiles/Laura.dir
   OBJECT_FILE_DIR = CMakeFiles/Laura.dir/headers
 
+build CMakeFiles/Laura.dir/src/NumberPredictor.cpp.o: CXX_COMPILER__Laura_unscanned_Debug /home/hadez/CLionProjects/Laura/src/NumberPredictor.cpp || cmake_object_order_depends_target_Laura
+  DEP_FILE = CMakeFiles/Laura.dir/src/NumberPredictor.cpp.o.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Laura.dir
+  OBJECT_FILE_DIR = CMakeFiles/Laura.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Laura
@@ -81,7 +87,7 @@ build CMakeFiles/Laura.dir/headers/neural_utils.cpp.o: CXX_COMPILER__Laura_unsca
 #############################################
 # Link the executable Laura
 
-build Laura: CXX_EXECUTABLE_LINKER__Laura_Debug CMakeFiles/Laura.dir/main.cpp.o CMakeFiles/Laura.dir/src/math/Matrix.cpp.o CMakeFiles/Laura.dir/src/NeuralLayer.cpp.o CMakeFiles/Laura.dir/headers/neural_utils.cpp.o
+build Laura: CXX_EXECUTABLE_LINKER__Laura_Debug CMakeFiles/Laura.dir/main.cpp.o CMakeFiles/Laura.dir/src/math/Matrix.cpp.o CMakeFiles/Laura.dir/src/NeuralLayer.cpp.o CMakeFiles/Laura.dir/headers/neural_utils.cpp.o CMakeFiles/Laura.dir/src/NumberPredictor.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Laura.dir
   POST_BUILD = :
