@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include <fstream>  // Add this for file operations
+#include <random>
 
 class NeuralLayer;
 
@@ -36,7 +37,20 @@ public:
     Matrix sigmoid_derivative() const;
 
     void save(std::ofstream& file) const;
-    static Matrix load(std::ifstream& file);  // Changed return type to Matrix
+    static Matrix load(std::ifstream& file);
+    static Matrix createDropoutMask(size_t rows, size_t cols, double dropout_rate) {
+        Matrix mask(rows, cols);
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_real_distribution<> dis(0, 1);
+
+        for(size_t i = 0; i < rows; i++) {
+            for(size_t j = 0; j < cols; j++) {
+                mask.data[i][j] = (dis(gen) > dropout_rate) ? 1.0 : 0.0;
+            }
+        }
+        return mask;
+    }
 private:
     std::vector<std::vector<double>> data;
     size_t rows;
